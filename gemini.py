@@ -1,6 +1,8 @@
 import os
+from dotenv import load_dotenv
 import google.generativeai as genai
 
+load_dotenv()
 
 # Gemini API GQA model (previously PaLM 2 API)
 genai.configure(api_key=os.getenv('MAKERSUITE_API_KEY'))
