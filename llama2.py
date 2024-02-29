@@ -1,6 +1,9 @@
 import os
+from dotenv import load_dotenv
 import replicate
 from replicate.client import Client
+
+load_dotenv()
 
 replicate = Client(api_token=os.getenv['REPLICATE_API_TOKEN'])
 
