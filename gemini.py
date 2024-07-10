@@ -4,8 +4,8 @@ import google.generativeai as genai
 
 load_dotenv()
 
-# Gemini API GQA model (previously PaLM 2 API)
-genai.configure(api_key=os.getenv('MAKERSUITE_API_KEY'))
+# Gemini 1.5 Flash API
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 
 """
 Install the Google AI Python SDK
